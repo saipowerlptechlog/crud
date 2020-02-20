@@ -1,0 +1,13 @@
+
+ <form (ngSubmit)="addNewProduct()"  >
+    <input type = "text" 
+    placeholder="id"  [(ngModel)]="productData.id" name="productid">
+    <br/>
+    
+    <input type = "text" placeholder="name" name="productName"  [(ngModel)]="productData.empy" >
+    <br/>
+    <input type = "text" placeholder="role"  name="productrole" [(ngModel)]="productData.role">
+    <br/>
+    
+    <input type = "submit" class = "forsubmit" value = "submit">
+ </form>

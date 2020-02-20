@@ -1,0 +1,33 @@
+
+
+
+
+   <a routerLink="/add" routerLinkActive="active">Add</a>
+<div class="container">
+    <h2>Employee list</h2>
+          
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Emy id</th>
+          <th>Emp name</th>
+          <th>Role</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of lis; let i = index">
+          <td>{{item.id}}</td>
+          <td>{{item.empy}}</td>
+          <td>{{item.role}}</td>
+          <td>  <button  routerLink="/edit/{{item.id}}">Edit</button></td>
+            <td> <button (click)="deleteProduct(item.id)">Delete</button></td>
+
+        </tr>
+     
+      </tbody>
+    </table>
+  </div>
+
+ 
